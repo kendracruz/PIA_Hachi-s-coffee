@@ -1,13 +1,22 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
+    <link rel="stylesheet" href="{% static 'css/Estilos.css' %}">
 </head>
 <body>
-    <h1>Nuestro menu </h1>
-    <a href="{% url 'index' %}">Home</a>
+    <nav>
+        <img src="{% static 'img/imagen_logo2.png' %}" alt="Logo" width="150" height="200">
+        <a href="{%url 'index'%}">Inicio</a>
+        <a href="{%url 'nosotros'%}">Nosotros</a>
+        <a href="{%url 'ubicacion'%}">Ubicacion</a>
+        <a href="{%url 'tienda_online'%}">Tienda online</a>
+        <a href="{%url 'eventos'%}">Eventos</a>
+    </nav>
+    <h1>Menu de productos</h1>
     
 
     {% for p in info %}

@@ -4,19 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cafeteria 53</title>
+    <title>Eventos</title>
     <link rel="stylesheet" href="{% static 'css/Estilos.css' %}">
 </head>
 <body>
     <nav>
         <img src="{% static 'img/imagen_logo2.png' %}" alt="Logo" width="150" height="200">
+        <a href="{%url 'index'%}"> Inicio</a>
         <a href="{%url 'menu'%}">Menu</a>
         <a href="{%url 'nosotros'%}">Nosotros</a>
         <a href="{%url 'ubicacion'%}">Ubicacion</a>
         <a href="{%url 'tienda_online'%}">Tienda online</a>
-        <a href="{%url 'eventos'%}">Eventos</a>
-    </nav>
-    <h1>Pagina principal</h1>
+    </nav>  
+    <h1>Eventos proximos</h1>
 
 </body>
 </html>
