@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nosotros</title>
+    <title>Nosotros | Hachi Coffee's</title>
     <link rel="stylesheet" href="{% static 'css/Estilos.css' %}">
 </head>
 <body>
@@ -16,11 +16,56 @@
         <a href="{%url 'tienda_online'%}">Tienda online</a>
         <a href="{%url 'eventos'%}">Eventos</a>
     </nav>
-    <h1>Sobre Nosotros</h1>
-    <p>En Cafeteria 53, nos apasiona ofrecer a nuestros clientes una experiencia única
-       que combina sabores excepcionales, un ambiente acogedor y un servicio
-       impecable. Fundada en 2020, nuestra misión es ser el lugar de encuentro
-       favorito para los amantes del café y la buena compañía.</p>
+    
+    <main class="nosotros">
+    <section class="historia fade-in">
+    <h1>Nuestra historia</h1>
+    <p>Hachis coffee nacio con la idea de crear un lugar donde los amantes del cafe puedan pasar un momento agradable y las mascotas pudieran compartir de momentos unicos, desde nuestros inicios nos hemos dedicado a ofrecer un espacio acogedor, donde cada taza de cafe se prepara con pasion y amor, cada cliente es parte de nuestra familia. 🐶💓 </p>
+    <img src="{% static 'img/cafeteria_int.png' %}" alt="Interior de Hachi Coffee's">
+    </section>
+
+    <section class=" nuestra galeria fade-in">
+        <h2>Nuestro espacio Hachis coffee's</h2>
+        <div class="contenedor-fotos">
+            <img src="{% static 'img/contenedor1.png' %}" alt="espacio tranquilo para los dogs">
+            <img src="{% static 'img/contenedor2.png' %}" alt="baño tematico">
+            <img src="{% static 'img/contenedor3.png' %}" alt="snacks y souvenirs">
+
+        </div>
+
+
+    </section>
+    
+    <section class="mision-vision fade-in">
+        <div class="mision">
+            <h2>Mision</h2>
+            <p>Brindar experiencias unicas a nuestros clientes con cafe de alta claidad y un ambiente amigable y familiar para las mascotas </p>
+        </div>
+        <div class="vision">
+            <h2>Vision</h2>
+            <p>Ser reconocidos como la cafeteria pet friendly mas queria de la ciudad y del pais, destacando por nuestra calidez y compromiso con la comunidad</p>
+
+        </div>
+    </section>
+
+    <section class="valores fade-in">
+        <h2>Nuestros valores en Hachi coffee's</h2>
+        <ul>
+            <li>🌿 Sostenibilidad</li>
+            <li>🐶💓Amor por los animales</li>
+            <li>☕Pasion por el cafe</li>
+            <li>💛 Comunidad y respeto</li>
+        </ul>
+    </section>
+    </main>
+
+    <footer>
+    <p>&copy; 2025 Hachi's Coffee | Todos los derechos reservados</p>
+  </footer>
+
+  <script src="{% static 'js/java.js' %}"></script>
+
+
 
 
 </body>
