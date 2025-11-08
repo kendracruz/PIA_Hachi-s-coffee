@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ubicacion</title>
-    <link rel="stylesheet" href="{% static 'css/Estilos.css' %}">
+    <link rel="stylesheet" href="{% static 'css/ubicacion.css' %}">
 </head>
 <body>
     <nav>
@@ -16,7 +16,34 @@
         <a href="{%url 'tienda_online'%}">Tienda online</a>
         <a href="{%url 'eventos'%}">Eventos</a>
     </nav>
-    <h1> Ven a nosotros esta es nuestra ubicacion </h1>
+
+<section id="sucursales">
+    <h1>Nuestras Sucursales</h1>
+    <p>Encuentra la sucursal de Hachi Coffee's más cercana ☕🐾</p>
+
+    <div class="sucursales-container">
+        {% if sucursales %}
+            {% for sucursal in sucursales %}
+            <div class="sucursal-card">
+                <h2>{{ sucursal.nombre }}</h2>
+                <p>📍 {{ sucursal.direccion }}</p>
+                {% if sucursal.telefono %}
+                    <p>📞 {{ sucursal.telefono }}</p>
+                {% endif %}
+                {% if sucursal.correo %}
+                    <p>📧 {{ sucursal.correo }}</p>
+                {% endif %}
+                {% if sucursal.horario_apertura %}
+                    <p>⏰ {{ sucursal.horario_apertura }}</p>
+                {% endif %}
+            </div>
+            {% endfor %}
+        {% else %}
+            <p>No hay sucursales registradas actualmente.</p>
+        {% endif %}
+    </div>
+</section>
+
 
     <footer>
         <p>© 2025 Hachi Coffee's. Todos los derechos reservados.</p>

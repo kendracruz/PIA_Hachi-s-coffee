@@ -1,0 +1,91 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #e6ccb2;
+}
+
+nav {
+    background-color: #b08968;
+    padding: 10px 30px;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav a {
+    color: #583101;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ddb892;
+    text-decoration: underline;
+}
+
+.eventos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin: 60px auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.evento-item {
+    background-color: #f9f4ef;
+    border: 2px solid #ddb892;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.evento-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.evento-item h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #583101;
+    margin-bottom: 10px;
+}
+
+.evento-item p {
+    font-size: 1rem;
+    color: #4a2c0a;
+    margin: 6px 0;
+}
+
+.evento-item strong {
+    color: #7b3e00;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #583101;
+    margin-top: 40px;
+}
+
+
+.evento-container h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #583101;
+}
+
+
+footer{
+    background-color: #b08968;
+    color: #583101;
+    text-align: center;
+    padding: 15px 0;
+    bottom: 0;
+    width: 100%;
+}

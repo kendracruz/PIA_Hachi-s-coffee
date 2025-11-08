@@ -1,0 +1,108 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #e6ccb2;
+}
+
+nav {
+    background-color: #b08968;
+    padding: 10px 30px;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav a {
+    color: #583101;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ddb892;
+    text-decoration: underline;
+}
+
+.tienda-online {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: #fffaf5;
+  color: #4b2e05;
+}
+
+.tienda-online header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.tienda-online p {
+  font-size: 1.1rem;
+  color: #6a4b25;
+  margin-bottom: 2rem;
+}
+
+.productos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.producto {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.producto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.producto img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 1rem;
+}
+
+.producto h3 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.producto span {
+  display: block;
+  font-weight: bold;
+  color: #b46f1b;
+  margin-bottom: 0.5rem;
+}
+
+.producto button {
+  background: #b46f1b;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.producto button:hover {
+  background: #d08932;
+}
+
+
+footer{
+    background-color: #b08968;
+    color: #583101;
+    text-align: center;
+    padding: 15px 0;
+    bottom: 0;
+    width: 100%;
+}

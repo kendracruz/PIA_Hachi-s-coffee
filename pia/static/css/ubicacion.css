@@ -1,0 +1,89 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #e6ccb2;
+}
+
+nav {
+    background-color: #b08968;
+    padding: 10px 30px;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav a {
+    color: #583101;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ddb892;
+    text-decoration: underline;
+}
+
+
+#sucursales {
+    background-color: #ddb892;
+    color: #583101;
+    padding: 60px 80px;
+    text-align: center;
+}
+
+#sucursales h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+#sucursales p {
+    font-size: 1rem;
+    margin-bottom: 40px;
+}
+
+.sucursales-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.sucursal-card {
+    background-color: #b08968;
+    color: #ede0d4;
+    border-radius: 15px;
+    width: 300px;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.sucursal-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+}
+
+.sucursal-card h2 {
+    text-align: center;
+    color: #3b2008;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.sucursal-card p {
+    font-size: 0.95rem;
+    margin: 5px 0;
+    line-height: 1.4;
+}
+
+footer{
+    background-color: #b08968;
+    color: #583101;
+    text-align: center;
+    padding: 15px 0;
+    bottom: 0;
+    width: 100%;
+}

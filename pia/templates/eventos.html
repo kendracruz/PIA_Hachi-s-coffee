@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eventos</title>
-    <link rel="stylesheet" href="{% static 'css/Estilos.css' %}">
+    <link rel="stylesheet" href="{% static 'css/eventos.css' %}">
 </head>
 <body>
     <nav>
@@ -17,6 +17,25 @@
         <a href="{%url 'tienda_online'%}">Tienda online</a>
     </nav>  
     <h1>Eventos proximos</h1>
+
+<section class="eventos-container">
+    {% if eventos %}
+        {% for evento in eventos %}
+        <article class="evento-item">
+            <h2>{{ evento.titulo }}</h2>
+                <p><strong>Fecha:</strong> {{ evento.fecha|date:"d M Y" }}</p>
+                <p><strong>Sucursal:</strong> {{ evento.sucursal.nombre }}</p>
+                <p><strong>Capacidad:</strong> {{ evento.capacidad }} personas</p>
+                <p><strong>Precio:</strong> ${{ evento.precio }}</p>
+                <p>{{ evento.descripcion }}</p>
+        </article>
+        {% endfor %}
+    {% else %}
+        <p>No hay eventos disponibles en este momento.</p>
+    {% endif %}
+</section>
+
+
 
 
 

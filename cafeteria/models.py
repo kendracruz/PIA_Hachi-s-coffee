@@ -8,7 +8,7 @@ class Producto(models.Model):
     precio = models.FloatField()
 
     def __str__(self):
-        return self.descripcion
+        return self.nombre
 
 
 class Sucursal(models.Model):
