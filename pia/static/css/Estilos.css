@@ -25,7 +25,7 @@ nav a:hover {
     text-decoration: underline;
 }
 
-#bienvenida {
+#texto_derecha {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -37,23 +37,23 @@ nav a:hover {
     background-color: #ddb892;
 }
 
-#bienvenida .texto_bienvenida {
+#texto_derecha .texto {
     flex: 1;
     max-width: 55%;
 }
 
-#bienvenida h1 {
+#texto_derecha h1 {
     font-size: 2.2rem;
     margin-bottom: 20px;
     color: #583101;
 }
 
-#bienvenida p {
+#texto_derecha p {
     line-height: 1.6;
     text-align: justify;
 }
 
-#bienvenida img {
+#texto_derecha img {
     width: 400px;
     height: 400px;
     object-fit: cover;
