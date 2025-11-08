@@ -1,0 +1,172 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #fffdf9;
+  color: #3a2e2e;
+  overflow-x: hidden;
+}
+
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: linear-gradient(90deg, #d4a373, #a47148);
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+nav img {
+  width: 120px;
+  height: auto;
+  border-radius: 50%;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 10px 15px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+}
+
+
+main.nosotros {
+  text-align: center;
+  padding: 50px 10%;
+}
+
+
+.historia {
+  background: #f7e9d7;
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  margin-bottom: 60px;
+}
+
+.historia img {
+  width: 80%;
+  border-radius: 20px;
+  margin-top: 20px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.historia h1 {
+  color: #8b5e34;
+  font-size: 2.2em;
+  margin-bottom: 10px;
+}
+
+
+.galeria {
+  margin: 50px 0;
+}
+
+.galeria h2 {
+  font-size: 1.9em;
+  color: #8b5e34;
+  margin-bottom: 30px;
+}
+
+.contenedor-fotos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contenedor-fotos img {
+  width: 30%;
+  border-radius: 20px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+  transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.contenedor-fotos img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+
+.mision-vision {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+  margin: 60px 0;
+}
+
+.mision, .vision {
+  flex: 1;
+  min-width: 300px;
+  max-width: 450px;
+  background: #fff;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.mision:hover, .vision:hover {
+  transform: translateY(-8px);
+}
+
+.mision h2, .vision h2 {
+  color: #8b5e34;
+}
+
+
+.valores {
+  background-color: #f7e9d7;
+  border-radius: 15px;
+  padding: 40px;
+  width: 80%;
+  margin: 0 auto 60px auto;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+}
+
+.valores h2 {
+  color: #8b5e34;
+  margin-bottom: 20px;
+}
+
+.valores ul {
+  list-style: none;
+  padding: 0;
+}
+
+.valores li {
+  font-size: 1.2em;
+  margin: 12px 0;
+}
+
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 1.3s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+footer {
+  background: linear-gradient(90deg, #a47148, #d4a373);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+  letter-spacing: 0.5px;
+}
