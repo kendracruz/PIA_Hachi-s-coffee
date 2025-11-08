@@ -1,0 +1,167 @@
+/* 🌿 Estilo general */
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #fffaf5;
+    color: #4b2e05;
+    margin: 0;
+    padding: 0;
+}
+
+/* 🧭 Barra de navegación */
+nav {
+    background-color: #b08968;
+    padding: 10px 30px;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+
+nav a {
+    color: #3e2001;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover, 
+nav a.activo {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* 🧁 Encabezado */
+.menu-header {
+    text-align: center;
+    background: linear-gradient(180deg, #fffaf5 0%, #f2e1d0 100%);
+    padding: 50px 20px;
+}
+
+.menu-header h1 {
+    font-size: 2.8em;
+    margin-bottom: 10px;
+    color: #3e2001;
+}
+
+.menu-header p {
+    color: #6a4b26;
+    font-size: 1.2em;
+}
+
+/* 📋 Contenedor principal */
+.menu-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* 📂 Secciones del menú */
+.menu-section {
+    margin-bottom: 70px;
+}
+
+.menu-section h2 {
+    text-align: center;
+    color: #704214;
+    font-size: 2em;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.menu-section h2::after {
+    content: "🐾";
+    display: block;
+    margin: 10px auto 0;
+    font-size: 1.5em;
+}
+
+/* 🧃 Tarjetas del menú */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.item {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #f3e2cc;
+}
+
+.item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+}
+
+.item h3 {
+    color: #593202;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.item p {
+    font-size: 0.95em;
+    color: #5f4b32;
+    margin-bottom: 10px;
+}
+
+.item span {
+    font-weight: bold;
+    color: #a5682a;
+    font-size: 1.1em;
+}
+
+/* 🐶 Sección especial de combos */
+.menu-section:nth-child(odd) {
+    background-color: #f8efe3;
+    padding: 50px 20px;
+    border-radius: 25px;
+}
+
+/* ✨ Animación fade-in */
+.fade-in {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* 📱 Responsividad */
+@media (max-width: 768px) {
+    .menu-header h1 {
+        font-size: 2em;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav img {
+        margin-bottom: 10px;
+    }
+
+    .item {
+        padding: 15px;
+    }
+}
+
+/* 🦴 Footer */
+footer {
+    text-align: center;
+    background-color: #b08968;
+    color: #fff;
+    padding: 20px;
+    font-size: 0.9em;
+    letter-spacing: 0.5px;
+}
