@@ -1,30 +1,102 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu</title>
-    <link rel="stylesheet" href="{% static 'css/Estilos.css' %}">
+    <title>Menú | Hachi’s Coffee</title>
+    <link rel="stylesheet" href="{% static 'css/menu.css' %}">
 </head>
 <body>
     <nav>
-        <img src="{% static 'img/imagen_logo2.png' %}" alt="Logo" width="100" height="100">
-        <a href="{%url 'index'%}">Inicio</a>
-        <a href="{%url 'nosotros'%}">Nosotros</a>
-        <a href="{%url 'ubicacion'%}">Ubicacion</a>
-        <a href="{%url 'tienda_online'%}">Tienda online</a>
-        <a href="{%url 'eventos'%}">Eventos</a>
+        <img src="{% static 'img/imagen_logo2.png' %}" alt="Logo Hachi's Coffee" width="100" height="100">
+        <a href="{% url 'index' %}">Inicio</a>        
+        <a href="{% url 'menu' %}" class="activo">Menú</a>
+        <a href="{% url 'ubicacion' %}">Ubicación</a>
+        <a href="{% url 'tienda_online' %}">Tienda Online</a>
+        <a href="{% url 'eventos' %}">Eventos</a>
+        <a href="{% url 'nosotros' %}">Nosotros</a>
     </nav>
-    <h1>Menu de productos</h1>
-    
 
-    {% for p in info %}
-    <p>{{p.description }}</p>
-    {% endfor %}
-    
+    <header class="menu-header fade-in">
+        <h1>🐾✨ Menú Oficial – Hachi’s Coffee “El Sabor de la Manada” ✨🐾</h1>
+        <p>Sabores totalmente únicos, creados con amor, pensados para ti y tu mejor amigo peludito 💛</p>
+    </header>
+
+    <main class="menu-container fade-in">
+
+        <section class="menu-section">
+            <h2>☕ Bebidas Estrella de la Familia</h2>
+            <div class="menu-grid">
+                <article class="item"><h3>Hachi Latte Amoroso 💛</h3><p>Café espresso con leche de almendra, miel y canela. Cálido, suave y fiel, como el amor de Hachi.</p><span>$70</span></article>
+                <article class="item"><h3>Yoshi Mocca Rock 🎸</h3><p>Espresso con chocolate oscuro, chispas de cacao y crema batida. Energía pura con un toque rebelde.</p><span>$65</span></article>
+                <article class="item"><h3>Sushi Sweet Matcha 🍵</h3><p>Matcha con leche de avena y flor comestible. Fresco y elegante, como Sushi.</p><span>$60</span></article>
+                <article class="item"><h3>Aslan Roarccino 🦁</h3><p>Frappé de caramelo con crema dorada y pedacitos de galleta de chocolate. Fuerte y dulce a la vez.</p><span>$65</span></article>
+                <article class="item"><h3>Tedy Nube de Vainilla ☁️</h3><p>Latte frío con vainilla y malvavisco flameado. Dulzura que abraza.</p><span>$55</span></article>
+                <article class="item"><h3>Blacky Café Oscuro ⚫</h3><p>Espresso intenso con notas de cacao y avellanas. Misterioso y sofisticado.</p><span>$70</span></article>
+                <article class="item"><h3>Papa Chill Cappuccino 🧔</h3><p>Clásico cappuccino con espuma cremosa y polvo de canela. Calma en una taza.</p><span>$58</span></article>
+                <article class="item"><h3>Mamá Love Mocha 💕</h3><p>Mocha con leche de soya, crema rosada y corazón de fresa. Amor maternal en cada sorbo.</p><span>$60</span></article>
+                <article class="item"><h3>Latte Perruno 🐾</h3><p>Bebida vegetal sin café, con espuma ligera y sabor carob. ¡Apta para humanos y perritos!</p><span>$40</span></article>
+            </div>
+        </section>
+
+        <section class="menu-section">
+            <h2>🍰 Dulces Delicias de la Casa</h2>
+            <div class="menu-grid">
+                <article class="item"><h3>Pastel Huellitas de Amor 🐾</h3><p>Pan esponjoso con glaseado de café y huellitas de chocolate. Dulce y fotogénico.</p><span>$90</span></article>
+                <article class="item"><h3>Brownie Blacky Power 🍫</h3><p>Brownie intenso con nuez y un toque de sal de mar.</p><span>$90</span></article>
+                <article class="item"><h3>Cheesecake Nube Tedy 🍰</h3><p>Cheesecake con base crujiente y coulis de frutos rojos.</p><span>$100</span></article>
+                <article class="item"><h3>Sushi Roll Cake 🍓</h3><p>Mini rollos rellenos de fresa y crema, inspirados en Sushi.</p><span>$110</span></article>
+                <article class="item"><h3>Yoshi Crunch Cookie 🍪</h3><p>Galletas con chispas de chocolate y avena. Perfectas para compartir.</p><span>$70</span></article>
+                <article class="item"><h3>Pawffle de la Casa 🧇</h3><p>Waffle en forma de huellita con miel o chocolate.</p><span>$50</span></article>
+            </div>
+        </section>
+
+        <section class="menu-section">
+            <h2>🐶 Delicias Perrunas</h2>
+            <div class="menu-grid">
+                <article class="item"><h3>Puppuccino Hachi ☁️</h3><p>Espuma vegetal con galletita en forma de hueso.</p><span>$35</span></article>
+                <article class="item"><h3>Galletas Yoshi Crunchies 🦴</h3><p>De avena, plátano y mantequilla de maní natural.</p><span>$40</span></article>
+                <article class="item"><h3>Snack Sushi Bites 🍎</h3><p>Mini bocados de manzana y zanahoria deshidratada.</p><span>$38</span></article>
+                <article class="item"><h3>Pastelito Tedy Love 🎂</h3><p>Pastelito de avena y manzana para celebrar a tu lomito. Ideal para hasta 10 perriamigos.</p><span>$200</span></article>
+                <article class="item"><h3>Doggy Ice Cream Aslan 🍦</h3><p>Helado sin lactosa sabor plátano y crema de maní.</p><span>$45</span></article>
+                <article class="item"><h3>Combo Blacky Energy Bar ⚫</h3><p>Barrita natural de pollo y avena para lomitos activos como Blacky.</p><span>$42</span></article>
+            </div>
+        </section>
+
+        <section class="menu-section">
+            <h2>👩‍👧 Combos para Humanos</h2>
+            <div class="menu-grid">
+                <article class="item"><h3>Combo Manada Feliz 🐾</h3><p>Hachi Latte + Galletas Yoshi Crunch + Agua infusionada.</p><span>$95</span></article>
+                <article class="item"><h3>Combo Roar de Energía 🦁</h3><p>Aslan Roarccino + Cheesecake Nube Tedy.</p><span>$99</span></article>
+                <article class="item"><h3>Combo ChocoAmor 🍫</h3><p>Yoshi Mocca Rock + Brownie Blacky Power.</p><span>$98</span></article>
+            </div>
+        </section>
+
+        <section class="menu-section">
+            <h2>🐕❤️ Combos para Perritos</h2>
+            <div class="menu-grid">
+                <article class="item"><h3>Combo Amigo Fiel 🐾</h3><p>Puppuccino Hachi + Galletas Yoshi Crunchies.</p><span>$65</span></article>
+                <article class="item"><h3>Combo Día de Spa 🛁</h3><p>Doggy Ice Cream Aslan + Snack Sushi Bites.</p><span>$70</span></article>
+                <article class="item"><h3>Combo CumpleLomo 🎉</h3><p>Pastelito Tedy Love + premio sorpresa.</p><span>$80</span></article>
+            </div>
+        </section>
+
+        <section class="menu-section">
+            <h2>🫶 Para Compartir con tu Amigo Peludito</h2>
+            <div class="menu-grid">
+                <article class="item"><h3>Combo Amor de Manada 💛</h3><p>Hachi Latte + Puppuccino Hachi + Galletas para ambos.</p><span>$110</span></article>
+                <article class="item"><h3>Combo Día de Parque 🌳</h3><p>Aslan Roarccino + Doggy Ice Cream Aslan + Brownie Blacky Power.</p><span>$120</span></article>
+                <article class="item"><h3>Combo Tarde de Mimos ☁️</h3><p>Tedy Nube de Vainilla + Snack Sushi Bites + Pawffle de la Casa.</p><span>$125</span></article>
+                <article class="item"><h3>Combo Momento Zen 🐕🧘</h3><p>Sushi Sweet Matcha + Galletas Perrunas Yoshi Crunchies + Cheesecake Nube Tedy.</p><span>$130</span></article>
+            </div>
+        </section>
+    </main>
+
     <footer>
-        <p>© 2025 Hachi Coffee's. Todos los derechos reservados.</p>
+        <p>&copy; 2025 Hachi’s Coffee | Todos los derechos reservados 🐾</p>
     </footer>
+
+    <script src="{% static 'js/menu.js' %}"></script>
 </body>
 </html>
