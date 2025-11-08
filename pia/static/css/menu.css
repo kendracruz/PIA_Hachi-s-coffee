@@ -140,15 +140,6 @@ nav a:hover {
         font-size: 2em;
     }
 
-    nav {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    nav img {
-        margin-bottom: 10px;
-    }
-
     .item {
         padding: 15px;
     }
