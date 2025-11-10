@@ -12,21 +12,18 @@ nav {
     display: flex; 
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-
 nav a {
-    color: #3e2001;
+    color: #583101;
     text-decoration: none;
     margin: 0 15px;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
-nav a:hover, 
-nav a.activo {
-    color: #fff;
+nav a:hover {
+    color: #ddb892;
     text-decoration: underline;
 }
 
@@ -133,15 +130,6 @@ nav a.activo {
 @media (max-width: 768px) {
     .menu-header h1 {
         font-size: 2em;
-    }
-
-    nav {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    nav img {
-        margin-bottom: 10px;
     }
 
     .item {

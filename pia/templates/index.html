@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cafeteria 53</title>
+    <title> Bienvenidos </title>
     <link rel="stylesheet" href="{% static 'css/Estilos.css' %}">
 </head>
 <body>
@@ -25,19 +25,48 @@
             <img src="{% static 'img/imagen_bienvenida.png' %}" alt="bienvenida">
         </section>
 
-
-        <h2>Equipo Hachi</h2>
-        <p>Conoce a Kendra y Alejandro, los creadores de Coffees Hachi. Amantes del café y de los animales desde siempre, </p>
-
-        <section id="texto_derecha">
+        <section class="cafes_populares">
+            <h2>Nuestros cafés más populares</h2>
+            <div class="cafes">
+                <div class="cafe">
+                    <img src="{% static 'img/cafe_hachi.png' %}" alt="Café 1">
+                    <h3>Hachi Latte Amoroso</h3>
+                    <p>Café espresso con leche de almendra, miel y canela. Cálido, suave y fiel, como el amor de Hachi.</p>
+                </div>
+                <div class="cafe">
+                    <img src="{% static 'img/cafe_blacky.png' %}" alt="Café 2">
+                    <h3>Blacky Café Oscuro </h3>
+                    <p>Espresso intenso con notas de cacao y avellanas. Misterioso y sofisticado</p>
+                </div>
+                <div class="cafe">
+                    <img src="{% static 'img/cafe_perruno.png' %}" alt="Café 3">
+                    <h3>Latte Perruno </h3>
+                    <p>Bebida vegetal sin café, con espuma ligera y sabor carob. ¡Apta para humanos y perritos!</p>
+                <div>
+            </div>    
+        </section>
+        
+        <section id="promocion_nav">
             <div class="texto">
-                <h2>Promocion Navideña</h2>
-                <p>Conoce esta promocion de Navida</p>
+                <h2>Nuevos sabores navideños</h2>
+                <p>Disfruta esta temporada con nuestros nuevos sabores: Ponche, Rol de Canela y Buñuelo Cada sorbo te envolverá en el espíritu navideño. ¡Ven con tus amigos o tu peludo favorito y celebra con un café lleno de magia!
+                </p>
             </div>
             <img src="{% static 'img/promocion_nav.png'%}" alt="">
         </section>
+
+
+
     </section>
     
+        <section id="equipo_hachi">
+            <div class="texto">
+                <h2>Equipo Hachi</h2>
+                <p>Conoce a Kendra y Alejandro, los creadores de Coffees Hachi. Amantes del café y de los animales desde siempre </p>
+            </div>
+            <img src="" alt="">
+        </section>
+
     <footer>
         <p>© 2025 Hachi Coffee's. Todos los derechos reservados.</p>
     </footer>

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda online</title>
-    <link rel="stylesheet" href="{% static 'css/Estilos.css'%}">
+    <link rel="stylesheet" href="{% static 'css/tienda_online.css'%}">
 </head>
 <body>
     <nav>
@@ -16,7 +16,40 @@
         <a href="{%url 'ubicacion'%}">Ubicacion</a>
         <a href="{%url 'eventos'%}">Eventos</a>
     </nav>
-    <h1>Esta es nuestra tienda online</h1>
+
+    <section class="tienda-online fade-in">
+  <header>
+    <h1> Tienda Online – Hachi’s Coffee</h1>
+    <p>Disfruta el sabor y el cariño de Hachi’s Coffee, ahora hasta la puerta de tu hogar 🐾☕</p>
+  </header>
+
+  <div class="productos-grid">
+    <article class="producto">
+      <img src="{% static 'img/taza.png' %}" alt="Taza Hachi’s Coffee">
+      <h3>Taza “El Sabor de la Manada”</h3>
+      <p>Cerámica con diseño exclusivo de Hachi’s Coffee. Ideal para tus mañanas con tu lomito.</p>
+      <span>$200 MXN</span>
+      <button>Agregar al carrito 🛒</button>
+    </article>
+
+    <article class="producto">
+      <img src="{% static 'img/collar.png' %}" alt="Collar perruno">
+      <h3>Collar Perruno Hachi</h3>
+      <p>Collar artesanal ajustable, cómodo y resistente, con dije de huellita grabado.</p>
+      <span>$150 MXN</span>
+      <button>Agregar al carrito 🛒</button>
+    </article>
+
+    <article class="producto">
+      <img src="{% static 'img/caja.png' %}" alt="Caja regalo">
+      <h3>Caja Regalo “Amor de Manada”</h3>
+      <p>Incluye: café artesanal, galletas para ti y tu peludo, y una nota personalizada.</p>
+      <span>$300 MXN</span>
+      <button>Agregar al carrito 🛒</button>
+    </article>
+  </div>
+</section>
+
 
     <footer>
         <p>© 2025 Hachi Coffee's. Todos los derechos reservados.</p>
