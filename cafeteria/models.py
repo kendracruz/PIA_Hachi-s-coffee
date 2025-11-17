@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 class Producto(models.Model):
     nombre = models.CharField(max_length=100, default='Sin nombre')
-    descripcion = models.CharField(max_length=60)
+    descripcion = models.CharField(max_length=100)
     presentacion = models.CharField(max_length=100)
     precio = models.FloatField()
 
