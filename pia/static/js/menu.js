@@ -1,4 +1,3 @@
-// menu.js
 document.addEventListener("DOMContentLoaded", () => {
   const elements = document.querySelectorAll(".fade-in");
 
